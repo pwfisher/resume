@@ -255,12 +255,12 @@ p.split {
         .contact-info .linked-in::before, .contact-info .github::before {
           font-weight: 500; } }
   .contact-info .github {
-    background-image: url("/assets/images/github-mark.svg"); }
+    background-image: url("images/github-mark.svg"); }
     @media print {
       .contact-info .github::before {
         content: "github:"; } }
   .contact-info .linked-in {
-    background-image: url("/assets/images/linkedin-mark.svg"); }
+    background-image: url("images/linkedin-mark.svg"); }
     @media print {
       .contact-info .linked-in::before {
         content: "linkedin:"; } }
