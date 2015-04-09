@@ -1,0 +1,339 @@
+/*** Reset ***/
+body, p, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+code, pre {
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.25em; }
+
+/*** Typography ***/
+body {
+  background-color: rgba(234, 234, 234, 0.5);
+  color: #222;
+  font: 100%/1.35 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
+  @media print {
+    body {
+      font-size: 12px; } }
+
+@media screen and (min-width: 850px) {
+  h1 {
+    font-size: 3.15733em; }
+  h2 {
+    font-size: 2.36859em; }
+  h3 {
+    font-size: 1.77689em; }
+  h4 {
+    font-size: 1.333em; }
+  h5 {
+    font-size: 1em; }
+  h6 {
+    font-size: 1.77689em; } }
+
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 2.0736em; }
+  h2 {
+    font-size: 1.728em; }
+  h3 {
+    font-size: 1.44em; }
+  h4 {
+    font-size: 1.2em; }
+  h5 {
+    font-size: 1em; }
+  h6 {
+    font-size: 1.44em; } }
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.60181em; }
+  h2 {
+    font-size: 1.42383em; }
+  h3 {
+    font-size: 1.26562em; }
+  h4 {
+    font-size: 1.125em; }
+  h5 {
+    font-size: 1em; }
+  h6 {
+    font-size: 1.26562em; } }
+
+@media print {
+  h1 {
+    font-size: 2.44141em; }
+  h2 {
+    font-size: 1.95312em; }
+  h3 {
+    font-size: 1.5625em; }
+  h4 {
+    font-size: 1.25em; }
+  h5 {
+    font-size: 1em; }
+  h6 {
+    font-size: 1.5625em; }
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a {
+    text-decoration: none; } }
+
+h1, h3, time {
+  font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+  font-weight: bold; }
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.2;
+  margin-bottom: 0.5em; }
+
+h2, h5 {
+  font-weight: 400; }
+
+h4 {
+  font-weight: 500; }
+
+h5 {
+  font-style: italic; }
+
+p, li {
+  font-size: 1em;
+  margin-bottom: 0.5em; }
+
+address {
+  font-weight: 200; }
+
+time {
+  color: rgba(34, 34, 34, 0.8); }
+
+/*** Grid ***/
+body {
+  padding: 4%;
+  margin: auto;
+  max-width: 1000px;
+  min-width: 320px; }
+
+section {
+  margin-bottom: 0.38197em;
+  padding: 0.61803em 1em; }
+
+.grid-phi .c-wide {
+  width: 57.8034%; }
+  .grid-phi .c-wide + .c-short {
+    padding-left: 1%; }
+
+.grid-phi .c-short {
+  width: 34.1966%; }
+  .grid-phi .c-short + .c-wide {
+    padding-left: 7%; }
+
+.grid-phi .c-full {
+  width: 96%; }
+
+.grid-phi .c-wide, .grid-phi .c-short {
+  display: inline-block;
+  vertical-align: top; }
+
+@media screen and (max-width: 850px) {
+  .grid-phi .c-wide, .grid-phi .c-short {
+    width: 96%; }
+  .grid-phi .c-wide + .c-short,
+  .grid-phi .c-short + .c-wide {
+    padding-left: 0; } }
+
+@media print {
+  .grid-phi .c-wide, .grid-phi .c-short, .grid-phi .c-full {
+    display: block;
+    margin-bottom: 0.15em;
+    width: 100%; }
+  .grid-phi .c-wide + .c-short,
+  .grid-phi .c-short + .c-wide {
+    padding-left: 0; } }
+
+p.split {
+  display: table;
+  width: 100%; }
+  p.split > * {
+    display: table-cell; }
+  p.split > :last-child {
+    text-align: right; }
+
+@media print {
+  @page :first {
+    margin: 1cm 2cm; }
+  @page {
+    margin: 2cm 2cm 1cm; } }
+
+/*** Contact Info ***/
+.contact-info {
+  box-shadow: 0px 3px 0px -2px rgba(136, 136, 136, 0.19);
+  -webkit-box-shadow: 0px 3px 0px -2px rgba(136, 136, 136, 0.19);
+  -moz-box-shadow: 0px 3px 0px -2px rgba(136, 136, 136, 0.19); }
+  .contact-info li {
+    display: inline-block;
+    margin-right: 0.5em;
+    white-space: nowrap; }
+    .contact-info li:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 736px) and (orientation: portrait) {
+      .contact-info li {
+        display: block; } }
+    @media screen and (min-width: 736px) and (max-width: 1030px) and (orientation: portrait) {
+      .contact-info li {
+        display: inline-block; } }
+    @media print {
+      .contact-info li {
+        display: inline-block; } }
+  @media screen and (min-width: 1030px) {
+    .contact-info .methods {
+      text-align: right; }
+      .contact-info .methods li {
+        margin-right: 0;
+        margin-left: 0.5em; } }
+  .contact-info .address {
+    display: block; }
+    @media screen and (max-width: 850px) {
+      .contact-info .address .street {
+        display: block; } }
+    @media print {
+      .contact-info .address h4 {
+        font-size: 1em;
+        font-weight: 500; } }
+  .contact-info .state::after {
+    content: ","; }
+  @media screen and (min-width: 850px) and (max-width: 1030px) {
+    .contact-info .phone, .contact-info .email {
+      display: block; } }
+  .contact-info .phone::before, .contact-info .email::before {
+    font-weight: 500; }
+  .contact-info .phone::before {
+    content: "tel:"; }
+  .contact-info .email::before {
+    content: "email:"; }
+  .contact-info .linked-in, .contact-info .github {
+    padding-left: 1.25em;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.25em; }
+    .contact-info .linked-in::before, .contact-info .github::before {
+      content: ":"; }
+    @media print {
+      .contact-info .linked-in, .contact-info .github {
+        padding-left: 0; }
+        .contact-info .linked-in::before, .contact-info .github::before {
+          font-weight: 500; } }
+  .contact-info .github {
+    background-image: url("/assets/images/github-mark.svg"); }
+    @media print {
+      .contact-info .github::before {
+        content: "github:"; } }
+  .contact-info .linked-in {
+    background-image: url("/assets/images/linkedin-mark.svg"); }
+    @media print {
+      .contact-info .linked-in::before {
+        content: "linkedin:"; } }
+  .contact-info .fork-it {
+    display: none; }
+    @media print {
+      .contact-info .fork-it {
+        font-style: italic;
+        display: initial; } }
+
+/*** Experience ***/
+.experience {
+  box-shadow: 3px 0px 1px -2px rgba(136, 136, 136, 0.19);
+  -webkit-box-shadow: 3px 0px 1px -2px rgba(136, 136, 136, 0.19);
+  -moz-box-shadow: 3px 0px 1px -2px rgba(136, 136, 136, 0.19); }
+  @media screen and (max-width: 850px) {
+    .experience {
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none; } }
+  .experience .job {
+    margin-bottom: 0.38197em;
+    padding: 0 1em 0.61803em 0; }
+    @media screen and (max-width: 850px) {
+      .experience .job {
+        padding-right: 0; } }
+    .experience .job:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0; }
+  .experience .accomplishments .item, .experience .duties .item {
+    list-style-type: disc;
+    line-height: 1.3;
+    margin-left: 1.5em;
+    max-width: 35em; }
+
+/*** Skills ***/
+.skills ul {
+  margin-bottom: 1em; }
+
+.skills .item {
+  background-color: rgba(167, 143, 239, 0.2);
+  border-radius: 4px;
+  color: #42395f;
+  cursor: default;
+  display: inline-block;
+  margin: 0.25em 0;
+  padding: 0.25em 0.5em; }
+  .skills .item:hover {
+    background-color: rgba(167, 143, 239, 0.4); }
+  @media print {
+    .skills .item {
+      margin: 0;
+      padding: 0; }
+      .skills .item::after {
+        content: ',';
+        margin-left: -0.25em; }
+      .skills .item:last-child::after {
+        content: none; } }
+
+/*** Education ***/
+.education .institution {
+  margin-bottom: 1em; }
+
+.education time.graduated {
+  width: 5em; }
+
+.education .honors, .education .coursework {
+  margin-left: 1em; }
+  .education .honors .item, .education .coursework .item {
+    display: inline; }
+    .education .honors .item::after, .education .coursework .item::after {
+      content: ','; }
+    .education .honors .item:last-child::after, .education .coursework .item:last-child::after {
+      content: none; }
+
+/*# sourceMappingURL=arjans-resume.css.map */
