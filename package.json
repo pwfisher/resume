@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "clean": "rm -rf node_module/.cache && rm -rf out",
+    "deploy": "yarn clean && yarn build && touch out/.nojekyll && (NODE_DEBUG=gh-pages gh-pages -t -d out)",
+    "lint": "next lint",
+    "type-check": "tsc"
   },
   "dependencies": {
     "@types/node": "20.5.9",

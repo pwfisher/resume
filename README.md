@@ -1,3 +1,22 @@
+# Patrick Fisher's Resume
+
+Live at <a href="https://pwfisher.github.io/resume/">pwfisher.github.io/resume</a>.
+
+## GitHub Pages deployment
+
+```zsh
+yarn deploy
+```
+
+This will
+
+1. Build to `/out`,
+2. Commit `/out` as the root directory of the `gh-pages` branch.
+3. Push the `gh-pages` branch.
+4. Trigger GitHub Pages deployment from the `gh-pages` branch root, per repo settings.
+
+# Default README
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
