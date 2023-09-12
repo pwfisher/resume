@@ -15,6 +15,17 @@ This will
 3. Push the `gh-pages` branch.
 4. Trigger GitHub Pages deployment from the `gh-pages` branch root, per repo settings.
 
+## Local development
+
+Start the development server:
+
+```zsh
+yarn dev
+```
+
+Open [http://localhost:3000/resume](http://localhost:3000/resume) with your browser to see the result.
+Note that due to the `basePath` of `"resume"`, `http://localhost:3000/` is a 404.
+
 # Default README
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
