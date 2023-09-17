@@ -7,10 +7,9 @@
   --page-max-width: 800px;
 
   color-scheme: light dark;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root{
+
+  @media (prefers-color-scheme: dark) {
     --font-rgb: 256, 256, 256;
     --page-rgb: 0, 0, 0;
   }

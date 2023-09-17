@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Using TypeScript and Next.js',
 }
 
-export default function RootLayout({
+export default function AppLayout({
   children,
 }: {
   children: React.ReactNode

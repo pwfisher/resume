@@ -26,6 +26,7 @@ export interface Person {
   }
   location?: string
   name: string
+  title: string
 }
 
 export interface School {

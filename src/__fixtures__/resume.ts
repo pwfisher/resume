@@ -153,7 +153,8 @@ export const resume: Resume = {
       phone: '213-247-4130'
     },
     location: 'Thousand Oaks, California',
-    name: 'Patrick Fisher'
+    name: 'Patrick Fisher',
+    title: 'Senior Frontend Software Engineer'
   },
   schools: [
     {

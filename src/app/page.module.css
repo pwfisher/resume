@@ -3,42 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 32px 100px 100px;
   min-height: 100vh;
-}
-
-.description {
-  --description-background-rgb: 248, 249, 250;
-  --description-border-rgb: 211, 213, 214;
-
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--page-max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
-
-  @media (prefers-color-scheme: dark) {
-    --description-background-rgb: 47, 48, 49;
-    --description-border-rgb: 108, 108, 108;
-  }
-}
-
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background: rgb(var(--description-background-rgb));
-  border: 1px solid rgb(var(--description-border-rgb));
 }
 
 .grid {
@@ -106,43 +72,6 @@
   .center {
     padding: 8rem 0 6rem;
   }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border-width: 0 0 1px 0;
-  }
-
-  .description div {
-    align-items: flex-end;
-    background: rgb(var(--page-rgb));
-    inset: auto 0 0;
-    pointer-events: none;
-    z-index: 1;
-  }
 }
 
 /* Tablet and Smaller Desktop */
@@ -153,10 +82,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
   .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
