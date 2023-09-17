@@ -1,8 +1,19 @@
 :root {
+  --font-rgb: 47, 48, 49;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-  --page-width: 800px;
+  --page-rgb: 256, 256, 256;
+  --page-max-width: 800px;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --font-rgb: 256, 256, 256;
+    --page-rgb: 0, 0, 0;
+  }
 }
 
 * {
@@ -18,7 +29,8 @@ body {
 }
 
 body {
-  color: #333;
+  background-color: rgb(var(--page-rgb));
+  color: var(--font-color);
 }
 
 a {
@@ -28,14 +40,4 @@ a {
 code {
   font-family: var(--font-mono);
   font-weight: 700;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-
-  body {
-    color: white;
-  }
 }
