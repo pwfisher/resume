@@ -3,15 +3,18 @@ import styles from './page.module.css'
 import { assetPrefix } from '../constants'
 import { resume } from '../__fixtures__'
 import { Header } from '../components/Header'
+import { Jobs } from '../components/Jobs'
 
 const {
+  jobs,
   person
 } = resume
 
 export default function AppPage() {
   return (
     <main className={styles.main}>
-      <Header {...{ person }}></Header>
+      <Header {...{ person }} />
+      <Jobs {...{ jobs }} />
 
       <div className={styles.center}>
         <Image
