@@ -19,11 +19,18 @@ export interface Job {
   tools?: string[]
 }
 
+export interface Link {
+  id: number
+  text?: string
+  url: string
+}
+
 export interface Person {
   contact: {
     email: string
     phone: string
   }
+  links: Link[]
   location?: string
   name: string
   title: string

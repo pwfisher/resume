@@ -152,6 +152,18 @@ export const resume: Resume = {
       email: 'pfisher42@gmail.com',
       phone: '213-247-4130'
     },
+    links: [
+      {
+        id: 0,
+        text: 'in/pwfisher',
+        url: 'https://www.linkedin.com/in/pwfisher'
+      },
+      {
+        id: 1,
+        text: 'github.com/pwfisher/resume',
+        url: 'https://github.com/pwfisher/resume'
+      }
+    ],
     location: 'Thousand Oaks, California',
     name: 'Patrick Fisher',
     title: 'Senior Frontend Software Engineer'

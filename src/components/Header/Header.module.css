@@ -14,14 +14,6 @@
     background: rgb(47, 48, 49);
     border: 1px solid rgb( 108, 108, 108);
   }
-
-  @media (max-width: 700px) {
-    border-width: 0 0 1px 0;
-    inset: 0 auto auto;
-    padding: 16px;
-    position: fixed;
-    width: 100%;
-  }
 }
 
 .name {
@@ -33,4 +25,14 @@
   font-family: var(--font-mono);
   font-size: 14px;
   width: fit-content;
+}
+
+.links {
+  margin-top: 12px;
+}
+
+.link {
+  display: block;
+  font-size: 14px;
+  text-align: center;
 }
