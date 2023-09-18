@@ -5,7 +5,7 @@ import styles from './Jobs.module.css'
 
 export const Jobs: FC<{ jobs: IJob[] }> = ({ jobs }) => (
   <div className={styles.body}>
-    {jobs.reverse().map(job => (
+    {[...jobs].reverse().map(job => (
       <Job key={job.id} {...{ job }} />
     ))}
   </div>
