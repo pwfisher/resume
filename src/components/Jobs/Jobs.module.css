@@ -1,4 +1,19 @@
 .body {
   margin-top: 16px;
+  max-width: var(--page-max-width);
   width: 100%;
+}
+
+.header {
+  border-bottom: 2px solid transparent;
+  border-color: rgba(var(--font-rgb), 0.8);
+  margin-bottom: 8px;
+  opacity: 0.8;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+
+}
+
+.header::first-letter {
+  font-size: larger;
 }

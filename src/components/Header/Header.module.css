@@ -6,7 +6,8 @@
   flex-direction: column;
   margin-bottom: 16px;
   max-width: var(--page-max-width);
-  padding: 16px 64px 20px;
+  padding: 16px 16px 20px;
+  text-align: center;
   width: 100%;
   z-index: 100;
 

@@ -1,5 +1,5 @@
 .body {
-  padding: 16px;
+  padding: 16px 0;
 }
 
 .title {
@@ -9,13 +9,14 @@
 
 .company {
   font-weight: 500;
-  margin-bottom: 4px;
-  opacity: 0.9;
+  margin-bottom: 6px;
+  opacity: 0.8;
 }
 
 .dates,
 .location {
   font-size: 14px;
+  margin-bottom: 4px;
   opacity: 0.7;
 }
 
@@ -26,6 +27,7 @@
   }
 
   .right {
+    padding-top: 6px;
     text-align: right;
   }
 }

@@ -29,7 +29,7 @@ body {
 
 body {
   background-color: rgb(var(--page-rgb));
-  color: var(--font-color);
+  color: rgb(var(--font-rgb));
 }
 
 a {
