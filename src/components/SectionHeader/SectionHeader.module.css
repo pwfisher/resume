@@ -1,0 +1,17 @@
+.body {
+  border-bottom: 2px solid transparent;
+  border-color: rgba(var(--font-rgb), 0.7);
+  font-size: 20px;
+  margin-bottom: 8px;
+  opacity: 0.9;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+
+  @media (prefers-color-scheme: dark) {
+    opacity: 0.8;
+  }
+}
+
+.body::first-letter {
+  font-size: larger;
+}

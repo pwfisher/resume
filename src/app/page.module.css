@@ -30,6 +30,7 @@
 }
 
 .logo {
+  opacity: 0.8;
   position: relative;
 
   @media (prefers-color-scheme: dark) {

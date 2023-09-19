@@ -4,7 +4,7 @@
   border: 1px solid rgb(211, 213, 214);
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   max-width: var(--page-max-width);
   padding: 16px 16px 20px;
   text-align: center;
@@ -13,7 +13,7 @@
 
   @media (prefers-color-scheme: dark) {
     background: rgb(47, 48, 49);
-    border: 1px solid rgb( 108, 108, 108);
+    border-color: rgb( 108, 108, 108);
   }
 }
 
