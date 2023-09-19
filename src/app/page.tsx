@@ -4,10 +4,12 @@ import { assetPrefix } from '../constants'
 import { resume } from '../__fixtures__'
 import { Header } from '../components/Header'
 import { Jobs } from '../components/Jobs'
+import { Schools } from '../components/Schools'
 
 const {
   jobs,
-  person
+  person,
+  schools
 } = resume
 
 export default function AppPage() {
@@ -15,6 +17,7 @@ export default function AppPage() {
     <main className={styles.main}>
       <Header {...{ person }} />
       <Jobs {...{ jobs }} />
+      <Schools {...{ schools }} />
 
       <div className={styles.logoWrap}>
         <span>Powered by</span>

@@ -12,7 +12,7 @@
 }
 
 .logoWrap {
-  border-top: 2px solid transparent;
+  border-top: 1px solid transparent;
   border-color: rgba(var(--font-rgb), 0.3);
   display: flex;
   justify-content: flex-end;

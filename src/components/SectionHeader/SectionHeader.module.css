@@ -1,5 +1,5 @@
 .body {
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   border-color: rgba(var(--font-rgb), 0.7);
   font-size: 20px;
   margin-bottom: 8px;
@@ -13,5 +13,5 @@
 }
 
 .body::first-letter {
-  font-size: larger;
+  font-size: 26px;
 }
