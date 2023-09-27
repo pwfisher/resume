@@ -10,7 +10,7 @@ export const Header: FC<{ person: Person }> = ({ person }) => {
   } = person
 
   return <header className={styles.body}>
-    <h1 className={styles.name}>{name}</h1>
+    <h1 className={styles.name}>{name.split(' ').map(x => (<span>{x}</span>))}</h1>
     <p className={styles.title}>{title}</p>
     <ul className={styles.links}>
       {links.map(({ id, text, url }) => (

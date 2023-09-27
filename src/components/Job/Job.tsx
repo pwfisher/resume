@@ -1,16 +1,17 @@
 import { FC } from 'react'
 import { Job as IJob } from '../../types'
 import styles from './Job.module.css'
+import { Paragraphs } from '../Paragraphs'
 
 export const Job: FC<{ job: IJob }> = ({ job }) => {
   const {
-    // body,
     company,
     dateEnd,
     dateStart,
     duration,
     id,
     location,
+    paragraphs,
     title,
     // tools
   } = job;
@@ -27,6 +28,7 @@ export const Job: FC<{ job: IJob }> = ({ job }) => {
           <div className={styles.location}>{location}</div>
         </div>
       </header>
+      <Paragraphs {...{ paragraphs }} />
     </div>
   )
 }

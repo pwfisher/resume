@@ -18,13 +18,24 @@
 }
 
 .name {
-  font-size: 36px;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 3px;
   margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.name > span {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.name > span::first-letter {
+  font-size: 1.3em;
 }
 
 .title {
-  font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
   width: fit-content;
 }
 
@@ -34,6 +45,8 @@
 
 .link {
   display: block;
+  font-family: var(--font-mono);
   font-size: 14px;
+  line-height: 22px;
   text-align: center;
 }

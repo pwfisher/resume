@@ -1,15 +1,16 @@
 import { FC } from 'react'
 import { School as ISchool } from '../../types'
 import styles from './School.module.css'
+import { Paragraphs } from '../Paragraphs'
 
 export const School: FC<{ school: ISchool }> = ({ school }) => {
   const {
-    // body,
     dateEnd,
     dateStart,
     degree,
     id,
     name,
+    paragraphs,
   } = school;
 
   return (
@@ -23,6 +24,7 @@ export const School: FC<{ school: ISchool }> = ({ school }) => {
           <div className={styles.dates}>{dateStart} - {dateEnd}</div>
         </div>
       </header>
+      {paragraphs ? <Paragraphs {...{ paragraphs }} /> : null}
     </div>
   )
 }
