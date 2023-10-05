@@ -36,6 +36,8 @@
 
 .title {
   font-size: 18px;
+  text-transform: uppercase;
+  opacity: 0.9;
   width: fit-content;
 }
 
@@ -48,5 +50,6 @@
   font-family: var(--font-mono);
   font-size: 14px;
   line-height: 22px;
+  opacity: 0.7;
   text-align: center;
 }

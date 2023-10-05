@@ -1,6 +1,33 @@
 # Patrick Fisher's Resume
 
-Live at <a href="https://pwfisher.github.io/resume/">pwfisher.github.io/resume</a>.
+This repository is both an example of my work and an interactive resume.
+
+- See the repository source code and its history for an example of my work.
+- See it live at <a href="https://pwfisher.github.io/resume/">pwfisher.github.io/resume</a>.
+
+## Features
+
+- Light and dark modes.
+  - Test via `prefers-color-scheme` setting in browser dev tools.
+    ![prefers-color-scheme console setting](public/prefers-color-scheme-console-setting.png)
+- Longevity: static deployment at a reliable and free location (GitHub Pages) expected to live long-term.
+- Typescript: strict settings and full data spec.
+- Components: clean and reusable.
+
+Upcoming:
+
+- Contact info: hidden from search engines.
+- Printing: print media support with alternate layout including contact info.
+
+# Development
+
+```zsh
+yarn dev
+```
+
+Start the development server with `yarn dev` and the app will auto-update as you edit source files.
+Open [http://localhost:3000/resume](http://localhost:3000/resume) with your browser to see the result.
+(Note that due to the `basePath` of `"resume"`, `http://localhost:3000/` is a 404.)
 
 ## GitHub Pages deployment
 
@@ -8,57 +35,9 @@ Live at <a href="https://pwfisher.github.io/resume/">pwfisher.github.io/resume</
 yarn deploy
 ```
 
-This will
+`yarn deploy` will
 
 1. Build to `/out`,
 2. Commit `/out` as the root directory of the `gh-pages` branch.
 3. Push the `gh-pages` branch.
 4. Trigger GitHub Pages deployment from the `gh-pages` branch root, per repo settings.
-
-## Local development
-
-Start the development server:
-
-```zsh
-yarn dev
-```
-
-Open [http://localhost:3000/resume](http://localhost:3000/resume) with your browser to see the result.
-Note that due to the `basePath` of `"resume"`, `http://localhost:3000/` is a 404.
-
-# Default README
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
