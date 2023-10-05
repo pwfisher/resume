@@ -1,0 +1,20 @@
+.body {
+  overflow: hidden;
+}
+
+.footer {
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--page-rgb), 0.5),
+    rgba(var(--page-rgb), 1)
+  );
+  position: relative;
+  text-align: center;
+}
+
+.button {
+  appearance: none;
+  border-radius: 6px;
+  margin-top: 8px;
+  padding: 2px 8px;
+}

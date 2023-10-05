@@ -24,7 +24,7 @@ export const School: FC<{ school: ISchool }> = ({ school }) => {
           <div className={styles.dates}>{dateStart} - {dateEnd}</div>
         </div>
       </header>
-      {paragraphs ? <Paragraphs {...{ paragraphs }} /> : null}
+      {paragraphs ? <Paragraphs {...{ paragraphs }} uniqueId={`School:${id}`} /> : null}
     </div>
   )
 }

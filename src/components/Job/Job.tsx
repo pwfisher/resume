@@ -28,7 +28,7 @@ export const Job: FC<{ job: IJob }> = ({ job }) => {
           <div className={styles.location}>{location}</div>
         </div>
       </header>
-      <Paragraphs {...{ paragraphs }} />
+      <Paragraphs {...{ paragraphs }} uniqueId={`Job:${id}`} />
     </div>
   )
 }

@@ -25,8 +25,8 @@ export default function AppPage() {
           className={styles.logo}
           src={`${assetPrefix}/next.svg`}
           alt="Next.js Logo"
-          width={180}
-          height={37}
+          width={90}
+          height={19}
           priority
         />
       </div>
