@@ -44,7 +44,7 @@ export const SeeMore: FC<PropsWithChildren & SeeMoreProps> = ({ children, trunca
   if (typeof window !== 'undefined') window.addEventListener('resize', update)
   if (typeof screen !== 'undefined') screen.orientation.addEventListener('change', update)
 
-  useEffect(update, [enableControl, isExpanded, truncateAt, wrapRef])
+  useEffect(update, [enableControl, isExpanded, truncateAt, wrapHeightPx, wrapRef])
 
   return (
     <div className={styles.body}>

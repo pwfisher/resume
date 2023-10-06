@@ -7,17 +7,16 @@ This repository is both an example of my work and an interactive resume.
 
 ## Features
 
+- Responsive layout: mobile and desktop are quite different.
 - Light and dark modes.
   - Test via `prefers-color-scheme` setting in browser dev tools.
     ![prefers-color-scheme console setting](public/prefers-color-scheme-console-setting.png)
 - Longevity: static deployment at a reliable and free location (GitHub Pages) expected to live long-term.
 - Typescript: strict settings and full data spec.
 - Components: clean and reusable.
-
-Upcoming:
-
-- Contact info: hidden from search engines.
-- Printing: print media support with alternate layout including contact info.
+- CSS variables for code clarity and robustness.
+- Responsive widget: `SeeMore` updates on both resize and orientation change.
+- Contact info: obfuscated from search engines.
 
 # Development
 

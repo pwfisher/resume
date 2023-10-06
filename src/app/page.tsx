@@ -3,6 +3,7 @@ import styles from './page.module.css'
 import { assetPrefix } from '../constants'
 import { resume } from '../__fixtures__'
 import { Header } from '../components/Header'
+import { ContactInfo } from '../components/ContactInfo'
 import { Jobs } from '../components/Jobs'
 import { Schools } from '../components/Schools'
 
@@ -14,12 +15,21 @@ const {
 
 export default function AppPage() {
   return (
-    <main className={styles.main}>
+    <div className={styles.body}>
       <Header {...{ person }} />
-      <Jobs {...{ jobs }} />
-      <Schools {...{ schools }} />
 
-      <div className={styles.logoWrap}>
+      <div className={styles.belowHeader}>
+        <aside className={styles.aside}>
+          <ContactInfo {...{ person }} />
+        </aside>
+
+        <main className={styles.main}>
+          <Jobs {...{ jobs }} />
+          <Schools {...{ schools }} />
+        </main>
+      </div>
+
+      <footer className={styles.footer}>
         <span>Powered by</span>
         <Image
           className={styles.logo}
@@ -29,7 +39,7 @@ export default function AppPage() {
           height={19}
           priority
         />
-      </div>
-    </main>
+      </footer>
+    </div>
   )
 }

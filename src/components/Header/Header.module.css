@@ -1,19 +1,15 @@
 .body {
   align-items: center;
-  background: rgb(248, 249, 250);
-  border: 1px solid rgb(211, 213, 214);
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
   max-width: var(--page-max-width);
-  padding: 16px 16px 20px;
+  padding: 16px 16px 24px;
   text-align: center;
   width: 100%;
   z-index: 100;
 
-  @media (prefers-color-scheme: dark) {
-    background: rgb(47, 48, 49);
-    border-color: rgb( 108, 108, 108);
+  @media (min-width: 701px) {
+    border-bottom: 1px solid rgba(var(--font-rgb), 0.5);
   }
 }
 
@@ -21,6 +17,7 @@
   font-size: 38px;
   font-weight: 600;
   letter-spacing: 3px;
+  line-height: 1.1;
   margin-bottom: 8px;
   text-transform: uppercase;
 }
@@ -36,13 +33,15 @@
 
 .title {
   font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.5;
   text-transform: uppercase;
-  opacity: 0.9;
+  opacity: 0.8;
   width: fit-content;
 }
 
 .links {
-  margin-top: 12px;
+  margin-top: 24px;
 }
 
 .link {

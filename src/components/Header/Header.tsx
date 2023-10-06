@@ -13,8 +13,10 @@ export const Header: FC<{ person: Person }> = ({ person }) => {
     <h1 className={styles.name}>{name.split(' ').map(x => (<span key={x}>{x}</span>))}</h1>
     <p className={styles.title}>{title}</p>
     <ul className={styles.links}>
-      {links.map(({ id, text, url }) => (
-        <a className={styles.link} key={id} href={url}>{typeof text === 'string' ? text : url}</a>
+      {links.map(({ id, text, url }, i) => (
+        <li key={i}>
+          <a className={styles.link} key={id} href={url}>{typeof text === 'string' ? text : url}</a>
+        </li>
       ))}
     </ul>
   </header>

@@ -1,0 +1,44 @@
+.body {
+  text-align: center;
+}
+
+.body li {
+  margin-top: 4px;
+}
+
+.body li:first-of-type {
+  margin-top: 0;
+}
+
+.body h4 {
+  display: inline;
+  font-size: 13px;
+  font-weight: 700;
+  opacity: 0.6;
+  padding-right: 12px;
+}
+
+.body span {
+  font-size: 14px;
+  margin-top: 6px;
+  opacity: 0.7;
+}
+
+@media (min-width: 701px) {
+  .body {
+    text-align: left;
+  }
+
+  .body li {
+    margin-top: 32px;
+  }
+
+  .body li:first-of-type {
+    margin-top: 6px;
+  }
+
+  .body h4,
+  .body span {
+    display: block;
+  }
+}

@@ -1,22 +1,38 @@
-.main {
+.body {
+  --aside-border-rgb: 233, 234, 235;
+  --aside-gradient-rgb: 248, 249, 250;
+  --footer-margin-top: 64px;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 32px 100px;
   min-height: 100vh;
+  padding: 16px;
 
-  @media (max-width: 700px) {
-    padding: 16px;
+  @media (prefers-color-scheme: dark) {
+    --aside-border-rgb: 64, 65, 66;
+    --aside-gradient-rgb: 47, 48, 49;
   }
 }
 
-.logoWrap {
+.belowHeader {
+  max-width: var(--page-max-width);
+}
+
+.aside {
+  padding: 0 16px;
+}
+
+.main {
+  padding: 32px 16px;
+}
+
+.footer {
   border-top: 1px solid transparent;
   border-color: rgba(var(--font-rgb), 0.3);
   display: flex;
   justify-content: flex-end;
-  margin-top: 64px;
+  margin-top: var(--footer-margin-top);
   max-width: var(--page-max-width);
   opacity: 0.7;
   position: relative;
@@ -24,7 +40,7 @@
   width: 100%;
 }
 
-.logoWrap span {
+.footer span {
   font-size: 12px;
   margin-right: 12px;
   opacity: 0.5;
@@ -36,5 +52,31 @@
 
   @media (prefers-color-scheme: dark) {
     filter: invert(1);
+  }
+}
+
+@media (min-width: 701px) {
+  .body {
+    flex-direction: column;
+    padding: 32px 5%;
+  }
+
+  .belowHeader {
+    display: flex;
+  }
+
+  .aside {
+    background: linear-gradient(to left, rgb(var(--aside-gradient-rgb)), transparent);
+    border-right: 1px solid rgb(var(--aside-border-rgb));
+    padding: 48px 32px var(--footer-margin-top) 0;
+    width: 25%;
+  }
+
+  .main {
+    padding: 48px 0 var(--footer-margin-top) 32px;
+  }
+
+  .footer {
+    margin-top: 0;
   }
 }

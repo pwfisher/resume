@@ -157,7 +157,7 @@ export const resume: Resume = {
         url: 'https://www.linkedin.com/in/pwfisher'
       }
     ],
-    location: 'Thousand Oaks, California',
+    location: 'Thousand Oaks, CA',
     name: 'Patrick Fisher',
     title: 'Senior Frontend Software Engineer'
   },

@@ -25,7 +25,7 @@ export function useBrowserStoredState<State extends {}>({
   // Write to browser stored data when in-memory state is changed
   useEffect(() => {
     storage?.setItem(storageKey, JSON.stringify(state))
-  }, [state])
+  }, [state, storage, storageKey])
 
   return {
     state,
