@@ -4,11 +4,14 @@ import { FC, PropsWithChildren, useEffect, useRef, useState } from 'react'
 import { useBrowserStoredState } from '../../hooks/useBrowserStoredState'
 import styles from './SeeMore.module.css'
 
-const footerHeight = 32
+const footerHeight = 31.5
 
 type SeeMoreProps = { truncateAt: number, uniqueId: string }
 
 export const SeeMore: FC<PropsWithChildren & SeeMoreProps> = ({ children, truncateAt, uniqueId }) => {
+  const storageKey = `SeeMore:${uniqueId}`
+  const wrapId = `${storageKey}:wrap`
+
   /**
    * First render per session, `isExpanded = false`. Then we use local storage.
    * Use session instead of local storage to reset state between visits and tabs.
@@ -17,7 +20,7 @@ export const SeeMore: FC<PropsWithChildren & SeeMoreProps> = ({ children, trunca
   const { state, setState } = useBrowserStoredState<{ isExpanded: boolean }>({
     initialState: { isExpanded: false },
     storage: globalThis.sessionStorage,
-    storageKey: `SeeMore:${uniqueId}`,
+    storageKey,
   })
   const { isExpanded } = state
   const setIsExpanded = (x: boolean) => setState({ isExpanded: x })
@@ -29,22 +32,25 @@ export const SeeMore: FC<PropsWithChildren & SeeMoreProps> = ({ children, trunca
 
   const onClick = () => setIsExpanded(!isExpanded)
 
-  useEffect(() => {
+  const update = () => {
     if (!wrapRef.current) return
     const nextEnableControl = wrapRef.current.scrollHeight > truncateAt
     if (nextEnableControl !== enableControl) setEnableControl(nextEnableControl)
-  }, [enableControl, truncateAt, wrapRef])
+    const doTruncate = nextEnableControl && !isExpanded
+    const nextWrapHeightPx = doTruncate ? truncateAt - footerHeight : wrapRef.current.scrollHeight
+    if (nextWrapHeightPx !== wrapHeightPx) setWrapHeightPx(nextWrapHeightPx)
+  }
 
-  useEffect(() => {
-    if (!wrapRef.current) return
-    isExpanded ? setWrapHeightPx(wrapRef.current.scrollHeight) : setWrapHeightPx(truncateAt)
-  }, [isExpanded, truncateAt, wrapRef])
+  if (typeof window !== 'undefined') window.addEventListener('resize', update)
+  if (typeof screen !== 'undefined') screen.orientation.addEventListener('change', update)
+
+  useEffect(update, [enableControl, isExpanded, truncateAt, wrapRef])
 
   return (
     <div className={styles.body}>
       <div
         className={styles.wrap}
-        id={uniqueId}
+        id={wrapId}
         ref={wrapRef}
         style={{ maxHeight: wrapHeightPx }}
       >
@@ -54,7 +60,7 @@ export const SeeMore: FC<PropsWithChildren & SeeMoreProps> = ({ children, trunca
         <footer className={styles.footer} {...{ onClick }}>
           <button
             aria-expanded={isExpanded ? 'true' : 'false'}
-            aria-controls={uniqueId}
+            aria-controls={wrapId}
             className={styles.button}
             {...{ onClick }}
           >

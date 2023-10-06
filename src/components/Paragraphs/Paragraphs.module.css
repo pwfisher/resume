@@ -1,18 +1,11 @@
-.body {
-  --gap: 12px;
-
-  margin-bottom: var(--gap);
-}
-
 .paragraph {
   font-size: 14px;
   line-height: 20px;
-  margin: var(--gap) 0;
+  margin: 12px 0;
   opacity: 0.9;
   text-align: justify;
-
 }
 
 .paragraph:last-child {
-  margin-bottom: 0; /* for accurate truncation */
+  margin-bottom: 0; /* no gap between <p> and SeeMore <footer> */
 }
