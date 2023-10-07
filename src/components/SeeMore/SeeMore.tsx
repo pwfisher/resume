@@ -41,8 +41,14 @@ export const SeeMore: FC<PropsWithChildren & SeeMoreProps> = ({ children, trunca
     if (nextWrapHeightPx !== wrapHeightPx) setWrapHeightPx(nextWrapHeightPx)
   }
 
-  if (typeof window !== 'undefined') window.addEventListener('resize', update)
-  if (typeof screen !== 'undefined') screen.orientation.addEventListener('change', update)
+  useEffect(() => {
+    window.addEventListener('resize', update)
+    screen.orientation.addEventListener('change', update)
+    return () => {
+      window.removeEventListener('resize', update)
+      screen.orientation.removeEventListener('change', update)
+    }
+  })
 
   useEffect(update, [enableControl, isExpanded, truncateAt, wrapHeightPx, wrapRef])
 
