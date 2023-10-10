@@ -7,7 +7,7 @@
   font-size: 20px;
   margin-bottom: 4px;
 
-  @media (prefers-color-scheme: dark) {
+  @media screen and (prefers-color-scheme: dark) {
     color: white;
   }
 }
@@ -25,10 +25,23 @@
   opacity: 0.8;
 }
 
-@media (min-width: 701px) {
+@media screen and (min-width: 701px) {
   .header {
     display: flex;
     justify-content: space-between;
+  }
+
+  .right {
+    padding-top: 6px;
+    text-align: right;
+  }
+}
+
+@media print {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    page-break-inside: avoid;
   }
 
   .right {

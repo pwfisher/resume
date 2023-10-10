@@ -18,10 +18,23 @@
   opacity: 0.7;
 }
 
-@media (min-width: 701px) {
+@media screen and (min-width: 701px) {
   .header {
     display: flex;
     justify-content: space-between;
+  }
+
+  .right {
+    padding-top: 4px;
+    text-align: right;
+  }
+}
+
+@media print {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    page-break-inside: avoid;
   }
 
   .right {

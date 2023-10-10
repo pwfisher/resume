@@ -2,6 +2,10 @@
   overflow: hidden;
 }
 
+.wrap {
+  max-height: auto;
+}
+
 .footer {
   background: linear-gradient(
     to bottom,
@@ -17,4 +21,14 @@
   border-radius: 6px;
   margin-top: 8px;
   padding: 2px 8px;
+}
+
+@media print {
+  .wrap {
+    max-height: fit-content !important;
+  }
+
+  .footer {
+    display: none;
+  }
 }

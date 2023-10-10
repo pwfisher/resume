@@ -4,11 +4,11 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
   --page-rgb: 256, 256, 256;
-  --page-max-width: 1000px;
+  --page-max-width: 900px;
 
   color-scheme: light dark;
 
-  @media (prefers-color-scheme: dark) {
+  @media screen and (prefers-color-scheme: dark) {
     --font-rgb: 256, 256, 256;
     --page-rgb: 0, 0, 0;
   }
