@@ -143,18 +143,18 @@ export const resume: Resume = {
     links: [
       {
         id: 0,
+        text: 'linkedin.com/in/pwfisher',
+        url: 'https://www.linkedin.com/in/pwfisher'
+      },
+      {
+        id: 1,
         text: 'pwfisher.github.io/resume',
         url: 'https://pwfisher.github.io/resume/'
       },
       {
-        id: 1,
+        id: 2,
         text: 'github.com/pwfisher/resume',
         url: 'https://github.com/pwfisher/resume'
-      },
-      {
-        id: 2,
-        text: 'in/pwfisher',
-        url: 'https://www.linkedin.com/in/pwfisher'
       }
     ],
     location: 'Thousand Oaks, CA',
