@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import styles from './page.module.css'
 import { assetPrefix } from '../constants'
@@ -14,6 +15,7 @@ const {
 } = resume
 
 export default function AppPage() {
+
   return (
     <div className={styles.body}>
       <Header {...{ person }} />

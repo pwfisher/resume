@@ -1,5 +1,3 @@
-'use client';
-
 import { FC, PropsWithChildren, useEffect, useRef, useState } from 'react'
 import { useBrowserStoredState } from '../../hooks/useBrowserStoredState'
 import styles from './SeeMore.module.css'

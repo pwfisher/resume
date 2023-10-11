@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
 import { Person } from '../../types'
 import styles from './ContactInfo.module.css'
 
@@ -10,6 +10,39 @@ export const ContactInfo: FC<{ person: Person }> = ({ person }) => {
     },
     location,
   } = person
+
+  //
+  // De-obfuscate email and phone for printing.
+  //
+  useEffect(() => {
+    const { body: bodyClass } = styles
+
+    const onBeforeprint = () => {
+      const body = document.querySelector(`.${bodyClass}`)
+      if (!body) return
+      const nodeIterator = document.createNodeIterator(body, NodeFilter.SHOW_TEXT)
+      var textNode
+      var newText
+
+      while (textNode = nodeIterator.nextNode()) {
+        const { textContent } = textNode
+        if (!textContent) return
+
+        if (/·at·/.test(textContent)) {
+          newText = textContent.replace(/·at·/g, '@')
+        }
+        if (/([\d-]·){11}/.test(textContent)) {
+          newText = textContent.replace(/([\d-])·/g, '$1')
+        }
+        if (newText) {
+          textNode.nodeValue = newText
+          newText = null
+        }
+      }
+    }
+    window.addEventListener('beforeprint', onBeforeprint)
+    return () => window.removeEventListener('beforeprint', onBeforeprint)
+  })
 
   return (
     <ul className={styles.body}>
