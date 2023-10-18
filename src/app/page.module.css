@@ -82,7 +82,7 @@
 
 @media print {
   @page {
-    margin: .5in .3in;
+    margin: .5in .3in .25in;
   }
 
   .belowHeader {

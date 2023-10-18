@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { School as ISchool } from '../../types'
 import styles from './School.module.css'
-import { Paragraphs } from '../Paragraphs'
+import { Bullets } from '../Bullets'
 
 export const School: FC<{ school: ISchool }> = ({ school }) => {
   const {
@@ -10,7 +10,7 @@ export const School: FC<{ school: ISchool }> = ({ school }) => {
     degree,
     id,
     name,
-    paragraphs,
+    bullets,
   } = school;
 
   return (
@@ -24,7 +24,7 @@ export const School: FC<{ school: ISchool }> = ({ school }) => {
           <div className={styles.dates}>{dateStart} - {dateEnd}</div>
         </div>
       </header>
-      {paragraphs ? <Paragraphs {...{ paragraphs }} uniqueId={`School:${id}`} /> : null}
+      {bullets ? <Bullets {...{ bullets }} uniqueId={`School:${id}`} /> : null}
     </div>
   )
 }

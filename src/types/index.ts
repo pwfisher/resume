@@ -1,4 +1,4 @@
-export interface Paragraph {
+export interface Bullet {
   id: number
   text: string
 }
@@ -10,7 +10,7 @@ export interface Job {
   duration: string
   id: number
   location?: string
-  paragraphs: Paragraph[]
+  bullets: Bullet[]
   title: string
   tools?: string[]
 }
@@ -38,7 +38,7 @@ export interface School {
   degree?: string
   id: number
   name: string
-  paragraphs?: Paragraph[]
+  bullets?: Bullet[]
 }
 
 export interface Resume {

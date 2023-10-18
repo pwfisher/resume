@@ -3,54 +3,32 @@ import { Resume } from '../types'
 export const resume: Resume = {
   jobs: [
     {
-      company: 'Dexter Wilson Engineering, Inc.',
-      dateEnd: '2004',
-      dateStart: '2003',
-      duration: '1 yr',
-      id: 0,
-      location: 'Carlsbad, CA',
-      paragraphs: [
-        {
-          id: 0,
-          text: 'Designed and analyzed sewer, water and storm drain systems for new and existing developments. Created graphic model of Santa Clarita Valley sewer mains, synthesizing multiple data sets and visualizing results with GIS software. Created master sewerage plan for Agua Dulce. Obtained EIT certification.'
-        }
-      ],
-      title: 'Assistant Engineer'
-    },
-    {
-      company: 'VPA, Inc.',
-      dateEnd: '2005',
-      dateStart: '2004',
-      duration: '1 yr',
-      id: 1,
-      location: 'Calabasas, CA',
-      paragraphs: [
-        {
-          id: 0,
-          text: 'Project Manager and Technical Lead for company-wide Document Imaging project. Part of an excellent team which succeeded, where previous efforts had failed, to replace paper-based claims processing at a claims processing company.'
-        },
-        {
-          id: 1,
-          text: 'Documented existing processes with simple diagrams and detailed back-up information to aid communication and understanding. Drafted RFP with technical and business requirements. Calculated project ROI. Worked with subject matter experts to design new system and procedures.'
-        },
-        {
-          id: 2,
-          text: 'Managed highly successful implementation of $300,000 system to support 100 concurrent users, input 10,000+ pages daily, scan 4 million pages of existing files and securely store up to 10 million pages.'
-        }
-      ],
-      title: 'Systems Analyst'
-    },
-    {
       company: 'All Access Music Group, Inc.',
       dateEnd: 'Apr 2011',
       dateStart: 'Nov 2007',
       duration: '3 yrs 6 mos',
       id: 2,
       location: 'Malibu, CA',
-      paragraphs: [
+      bullets: [
         {
           id: 0,
-          text: 'Full stack LAMP web developer. Lead systems architect. Designed and implemented site features. Specified hardware, configured servers and installed applications. Managed databases. Provided tech support.'
+          text: 'Designed systems architecture as a full stack LAMP web developer.'
+        },
+        {
+          id: 1,
+          text: 'Designed and implemented numerous essential site features.'
+        },
+        {
+          id: 2,
+          text: 'Specified hardware, configured servers, and installed Linux applications.'
+        },
+        {
+          id: 3,
+          text: 'Managed MySQL and MSSQL databases.'
+        },
+        {
+          id: 4,
+          text: 'Provided tech support to coworkers.'
         }
       ],
       title: 'Web Developer',
@@ -63,7 +41,7 @@ export const resume: Resume = {
       duration: '2 yrs 8 mos',
       id: 3,
       location: 'Santa Monica, CA',
-      paragraphs: [
+      bullets: [
         {
           id: 0,
           text: 'As an engineer for Yahoo Global Media Foundation, I worked on teams building components shared by hundreds of Yahoo media properties, including News, Sports, and Finance.'
@@ -110,10 +88,18 @@ export const resume: Resume = {
       duration: '4 yrs 5 mos',
       id: 4,
       location: 'Venice, CA',
-      paragraphs: [
+      bullets: [
         {
           id: 0,
-          text: 'Ember. Docker. Angular legacy.'
+          text: 'Selected Ember and was a primary contributor to the effort to replace the legacy Angular home page and checkout funnel with a high-performance SPA.'
+        },
+        {
+          id: 1,
+          text: 'Built Docker container for Ember application. This simple deliverable from front end to devops enabled faster development cycles, better cooperation and CI/CD automation, and fewer environment-related bugs.'
+        },
+        {
+          id: 2,
+          text: 'Implemented many A/B tested features in the acquisition funnel with measurable impact on our key metric: customer conversion rate.'
         }
       ],
       title: 'Principal Engineer, Front End'
@@ -125,10 +111,22 @@ export const resume: Resume = {
       duration: '3 yrs',
       id: 5,
       location: 'Santa Monica, CA',
-      paragraphs: [
+      bullets: [
         {
           id: 0,
-          text: 'Created modular content system for home page and all editorial pages. Built accessible site navigation bar and menus. Owned features end-to-end: creating Typescript React modules, unit tests, sample data, interactive Storybook demos, Contentful CMS data models, API endpoints, and e2e tests. Set front end standards, reviewed code, and assisted junior engineers.'
+          text: 'Created modular content system for home page and all editorial pages.'
+        },
+        {
+          id: 1,
+          text: 'Built accessible site navigation bar and menus.'
+        },
+        {
+          id: 2,
+          text: 'Owned features end-to-end: creating Typescript React modules, unit tests, sample data, interactive Storybook demos, Contentful CMS data models, API endpoints, and e2e tests.'
+        },
+        {
+          id: 3,
+          text: 'Set front end standards, reviewed code, and assisted junior engineers.'
         }
       ],
       title: 'Senior Frontend Software Engineer',
@@ -168,7 +166,7 @@ export const resume: Resume = {
       dateStart: '1998',
       degree: 'B.S., Computer Engineering and Computer Science',
       name: 'University of Southern California',
-      paragraphs: [
+      bullets: [
         {
           id: 0,
           text: 'Activities and societies: Climbing Club, Study Abroad, Alternative Spring Break, Masters Swimming, Club Water Polo (Edinburgh), Tau Beta Pi, Pi Tau Sigma, Golden Key, Formula SAE, Robotics Lab.'
@@ -184,7 +182,7 @@ export const resume: Resume = {
       dateEnd: '2007',
       dateStart: '2005',
       name: 'USC Gould School of Law',
-      paragraphs: [
+      bullets: [
         {
           id: 0,
           text: 'Activities and societies: Katrina Legal Aid Project, Club Water Polo, Tae Kwon Do.'

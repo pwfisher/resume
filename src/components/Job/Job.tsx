@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Job as IJob } from '../../types'
 import styles from './Job.module.css'
-import { Paragraphs } from '../Paragraphs'
+import { Bullets } from '../Bullets'
 
 export const Job: FC<{ job: IJob }> = ({ job }) => {
   const {
@@ -11,9 +11,8 @@ export const Job: FC<{ job: IJob }> = ({ job }) => {
     duration,
     id,
     location,
-    paragraphs,
-    title,
-    // tools
+    bullets,
+    title
   } = job;
 
   return (
@@ -28,7 +27,7 @@ export const Job: FC<{ job: IJob }> = ({ job }) => {
           <div className={styles.location}>{location}</div>
         </div>
       </header>
-      <Paragraphs {...{ paragraphs }} uniqueId={`Job:${id}`} />
+      <Bullets {...{ bullets }} uniqueId={`Job:${id}`} />
     </div>
   )
 }

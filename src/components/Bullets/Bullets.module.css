@@ -1,0 +1,16 @@
+.bullets {
+  margin-left: 16px;
+}
+
+.bullet {
+  font-size: 14px;
+  line-height: 18px;
+  list-style: disc;
+  margin: 8px 0;
+  opacity: 0.9;
+  text-align: justify;
+}
+
+.bullet:last-child {
+  margin-bottom: 0; /* no gap between last item and SeeMore <footer> */
+}
