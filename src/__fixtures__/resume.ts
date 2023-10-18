@@ -3,12 +3,6 @@ import { Resume } from '../types'
 export const resume: Resume = {
   jobs: [
     {
-      company: 'All Access Music Group, Inc.',
-      dateEnd: 'Apr 2011',
-      dateStart: 'Nov 2007',
-      duration: '3 yrs 6 mos',
-      id: 2,
-      location: 'Malibu, CA',
       bullets: [
         {
           id: 0,
@@ -31,16 +25,16 @@ export const resume: Resume = {
           text: 'Provided tech support to coworkers.'
         }
       ],
+      company: 'All Access Music Group, Inc.',
+      dateEnd: 'Apr 2011',
+      dateStart: 'Nov 2007',
+      duration: '3 yrs 6 mos',
+      id: 2,
+      location: 'Malibu, CA',
       title: 'Web Developer',
       tools: []
     },
     {
-      company: 'Yahoo',
-      dateEnd: 'Nov 2013',
-      dateStart: 'Apr 2011',
-      duration: '2 yrs 8 mos',
-      id: 3,
-      location: 'Santa Monica, CA',
       bullets: [
         {
           id: 0,
@@ -79,15 +73,16 @@ export const resume: Resume = {
           text: 'Tech stack: Express, Git, Github, Mustache, NodeJS, PJAX, Sass, YUI.'
         }
       ],
+      company: 'Yahoo',
+      dateEnd: 'Nov 2013',
+      dateStart: 'Apr 2011',
+      duration: '2 yrs 8 mos',
+      id: 3,
+      location: 'Santa Monica, CA',
+
       title: 'Frontend Engineer'
     },
     {
-      company: 'Dollar Shave Club',
-      dateEnd: 'Apr 2018',
-      dateStart: 'Dec 2013',
-      duration: '4 yrs 5 mos',
-      id: 4,
-      location: 'Venice, CA',
       bullets: [
         {
           id: 0,
@@ -102,15 +97,15 @@ export const resume: Resume = {
           text: 'Implemented many A/B tested features in the acquisition funnel with measurable impact on our key metric: customer conversion rate.'
         }
       ],
+      company: 'Dollar Shave Club',
+      dateEnd: 'Apr 2018',
+      dateStart: 'Dec 2013',
+      duration: '4 yrs 5 mos',
+      id: 4,
+      location: 'Venice, CA',
       title: 'Principal Engineer, Front End'
     },
     {
-      company: 'FIGS',
-      dateEnd: 'Jun 2022',
-      dateStart: 'Jul 2019',
-      duration: '3 yrs',
-      id: 5,
-      location: 'Santa Monica, CA',
       bullets: [
         {
           id: 0,
@@ -122,13 +117,19 @@ export const resume: Resume = {
         },
         {
           id: 2,
-          text: 'Owned features end-to-end: creating Typescript React modules, unit tests, sample data, interactive Storybook demos, Contentful CMS data models, API endpoints, and e2e tests.'
+          text: 'Owned features end-to-end: created Typescript React modules, unit tests, sample data, interactive Storybook demos, Contentful CMS data models, API endpoints, and e2e tests.'
         },
         {
           id: 3,
           text: 'Set front end standards, reviewed code, and assisted junior engineers.'
         }
       ],
+      company: 'FIGS',
+      dateEnd: 'Jun 2022',
+      dateStart: 'Jul 2019',
+      duration: '3 yrs',
+      id: 5,
+      location: 'Santa Monica, CA',
       title: 'Senior Frontend Software Engineer',
       tools: ['Apollo', 'babel', 'bash', 'CircleCI', 'Contentful', 'CSS', 'cypress', 'express', 'Figma', 'flexbox', 'git', 'GitHub', 'GraphQL', 'GTM', 'HTML', 'HTTP', 'JavaScript', 'jest', 'lerna', 'mergify', 'Netlify', 'Next.js', 'node', 'React', 'Regex', 'Shopify', 'storybook', 'styled-components', 'TSConfig', 'TypeScript', 'VSCode', 'webpack', 'yarn', 'zsh']
     }
