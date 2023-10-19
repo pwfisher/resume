@@ -7,6 +7,7 @@ import { Header } from '../components/Header'
 import { ContactInfo } from '../components/ContactInfo'
 import { Jobs } from '../components/Jobs'
 import { Schools } from '../components/Schools'
+import { Skills } from '../components/Skills'
 
 const {
   jobs,
@@ -23,6 +24,7 @@ export default function AppPage() {
       <div className={styles.belowHeader}>
         <aside className={styles.aside}>
           <ContactInfo {...{ person }} />
+          <Skills {...{ person }} />
         </aside>
 
         <main className={styles.main}>

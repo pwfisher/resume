@@ -29,6 +29,7 @@ export interface Person {
   links: Link[]
   location?: string
   name: string
+  skills: string[]
   title: string
 }
 

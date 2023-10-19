@@ -90,7 +90,7 @@ export const resume: Resume = {
         },
         {
           id: 1,
-          text: 'Built Docker container for Ember application. This simple deliverable from front end to devops enabled faster development cycles, better cooperation and CI/CD automation, and fewer environment-related bugs.'
+          text: 'Built Docker container for Ember application. This clean deliverable to devops enabled faster development cycles, better cooperation and CI/CD automation, and fewer environment-related bugs.'
         },
         {
           id: 2,
@@ -158,6 +158,28 @@ export const resume: Resume = {
     ],
     location: 'Thousand Oaks, CA',
     name: 'Patrick Fisher',
+    skills: [
+      'Accessibilty (a11y)',
+      'CSS',
+      'Contentful',
+      'Git',
+      'Github',
+      'GraphQL',
+      'HTML',
+      'JavaScript',
+      'Node.js',
+      'Next.js',
+      'React',
+      'Regular Expressions (regex)',
+      'Responsive design',
+      'Single Page Applications (SPA)',
+      'SCSS/SASS',
+      'Shell',
+      'Storybook',
+      'SQL',
+      'TDD',
+      'TypeScript',
+    ],
     title: 'Senior Frontend Software Engineer'
   },
   schools: [
