@@ -10,7 +10,7 @@ export const resume: Resume = {
         },
         {
           id: 1,
-          text: 'Designed and implemented numerous essential site features.'
+          text: 'Designed and implemented numerous essential site features such as the deloyment system.'
         },
         {
           id: 2,
@@ -32,7 +32,20 @@ export const resume: Resume = {
       id: 2,
       location: 'Malibu, CA',
       title: 'Web Developer',
-      tools: []
+      tools: [
+        'Apache',
+        'JavaScript',
+        'jQuery',
+        'Linux',
+        'MSSQL',
+        'MySQL',
+        'PHP',
+        'Regular Expressions (regex)',
+        'Shell',
+        'SQL',
+        'Subversion',
+        'VMware',
+      ]
     },
     {
       bullets: [
@@ -79,8 +92,32 @@ export const resume: Resume = {
       duration: '2 yrs 8 mos',
       id: 3,
       location: 'Santa Monica, CA',
-
-      title: 'Frontend Engineer'
+      title: 'Frontend Engineer',
+      tools: [
+        'AJAX',
+        'Apache',
+        'Express',
+        'Git',
+        'GitHub',
+        'Hudson',
+        'JavaScript',
+        'JSON',
+        'Kanban',
+        'Linux',
+        'Mustache',
+        'NodeJS',
+        'NoSQL',
+        'PHP',
+        'PHPUnit',
+        'PJAX',
+        'REST',
+        'Sass',
+        'Scrum',
+        'Shell (bash)',
+        'Subversion',
+        'XML',
+        'YUI',
+      ]
     },
     {
       bullets: [
@@ -103,7 +140,16 @@ export const resume: Resume = {
       duration: '4 yrs 5 mos',
       id: 4,
       location: 'Venice, CA',
-      title: 'Principal Engineer, Front End'
+      title: 'Principal Engineer, Front End',
+      tools: [
+        'Angular',
+        'Docker',
+        'Ember',
+        'JavaScript',
+        'Jenkins',
+        'npm',
+        'Rails (erb)',
+      ]
     },
     {
       bullets: [
@@ -131,7 +177,37 @@ export const resume: Resume = {
       id: 5,
       location: 'Santa Monica, CA',
       title: 'Senior Frontend Software Engineer',
-      tools: ['Apollo', 'babel', 'bash', 'CircleCI', 'Contentful', 'CSS', 'cypress', 'express', 'Figma', 'flexbox', 'git', 'GitHub', 'GraphQL', 'GTM', 'HTML', 'HTTP', 'JavaScript', 'jest', 'lerna', 'mergify', 'Netlify', 'Next.js', 'node', 'React', 'Regex', 'Shopify', 'storybook', 'styled-components', 'TSConfig', 'TypeScript', 'VSCode', 'webpack', 'yarn', 'zsh']
+      tools: [
+        'Apollo',
+        'babel',
+        'CircleCI',
+        'Contentful',
+        'cypress',
+        'express',
+        'Figma',
+        'git',
+        'GitHub',
+        'GraphQL',
+        'GTM',
+        'JavaScript',
+        'jest',
+        'lerna',
+        'mergify',
+        'Netlify',
+        'Next.js',
+        'node',
+        'React',
+        'Regex',
+        'Shell',
+        'Shopify',
+        'storybook',
+        'styled-components',
+        'TSConfig',
+        'TypeScript',
+        'VSCode',
+        'webpack',
+        'yarn',
+      ]
     }
   ],
   person: {
@@ -162,8 +238,7 @@ export const resume: Resume = {
       'Accessibilty (a11y)',
       'CSS',
       'Contentful',
-      'Git',
-      'Github',
+      'Git/GitHub',
       'GraphQL',
       'HTML',
       'JavaScript',

@@ -25,6 +25,40 @@
   opacity: 0.8;
 }
 
+.tools {
+  font-size: 10px;
+  line-height: 1.3;
+  margin: 12px 0 0 35px;
+  text-indent: -35px;
+}
+
+.tool {
+  display: inline-block;
+  margin-left: 2px;
+  opacity: 0.7;
+  text-indent: 0;
+  white-space: nowrap;
+}
+
+.tool::after {
+  content: '·';
+  margin-left: 2px;
+  opacity: 0.6;
+}
+
+.tool:first-child {
+  margin-right: 4px;
+}
+
+.tool:first-child::after {
+  content: none;
+}
+
+.tool:last-child::after {
+  content: none;
+}
+
+
 @media screen and (min-width: 701px) {
   .header {
     display: flex;

@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { Job as IJob } from '../../types'
 import styles from './Job.module.css'
 import { Bullets } from '../Bullets'
+import { Tools } from './Tools'
 
 export const Job: FC<{ job: IJob }> = ({ job }) => {
   const {
@@ -12,7 +13,8 @@ export const Job: FC<{ job: IJob }> = ({ job }) => {
     id,
     location,
     bullets,
-    title
+    title,
+    tools
   } = job;
 
   return (
@@ -28,6 +30,12 @@ export const Job: FC<{ job: IJob }> = ({ job }) => {
         </div>
       </header>
       <Bullets {...{ bullets }} uniqueId={`Job:${id}`} />
+      {tools ? (
+        <ul className={styles.tools}>
+          <li className={styles.tool} key='Tools'><b>Tools:</b></li>
+          {tools.map(x => <li className={styles.tool} key={x}>{x}</li>)}
+        </ul>
+      ) : null}
     </div>
   )
 }
