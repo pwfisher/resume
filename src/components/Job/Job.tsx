@@ -2,7 +2,6 @@ import { FC } from 'react'
 import { Job as IJob } from '../../types'
 import styles from './Job.module.css'
 import { Bullets } from '../Bullets'
-import { Tools } from './Tools'
 
 export const Job: FC<{ job: IJob }> = ({ job }) => {
   const {

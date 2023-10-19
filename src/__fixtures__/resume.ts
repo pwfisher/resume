@@ -51,39 +51,27 @@ export const resume: Resume = {
       bullets: [
         {
           id: 0,
-          text: 'As an engineer for Yahoo Global Media Foundation, I worked on teams building components shared by hundreds of Yahoo media properties, including News, Sports, and Finance.'
+          text: 'Built list and carousel modules shared across all Yahoo media—powering home pages and more for News, Sports, Finance, etc. in dozens of languages, for hundreds of sites.'
         },
         {
           id: 1,
-          text: 'I was the primary author of the list and carousel modules which became ubiquitous on Yahoo Global Media sites in 2012. My carousel batching logic implements an async request queue which is lazy until interaction, then prefetches and intelligently handles rapid-fire requests in LIFO order.'
+          text: 'Made carousel batching logic with async request queue which is lazy until interaction, then prefetches and intelligently handles rapid-fire requests in LIFO order.'
         },
         {
           id: 2,
-          text: 'Tech stack: AJAX, Apache, Bash, HTML, Hudson, JavaScript, JSON, Linux, NoSQL, PHP, PHPUnit, REST, Scrum, svn, XML, YUI.'
+          text: 'Independently conceived and implemented method by which entire page is scrollable but each column of content moves independently.'
         },
         {
           id: 3,
-          text: 'Our team of 8 engineers led the development of a new version of all media sites using PJAX and ESI to improve client- and server-side performance, respectively. This new version of the Yahoo Publishing Platform was designed from the ground up to support multiple client device types including full capability desktop systems, touch screen tablets and smartphones.'
+          text: 'Contributed synthetic scrollbar module which was adopted as company-wide standard.'
         },
         {
           id: 4,
-          text: 'I independently conceived and implemented the method by which the entire page is scrollable but each column of content moves independently. I contributed a synthetic scrollbar module which was adopted as a company standard. I enhanced an open source SVG compression utility to achieve a 50-80% reduction in our icon file sizes. github.com/pwfisher/scour.py'
+          text: 'Led effort to create mobile version of new (node + express) screen.yahoo.com and contributed social media sharing module.'
         },
         {
           id: 5,
-          text: 'Same tech stack as above, plus: Android browser, ESI, Kanban, Mobile Safari, Mustache, PJAX, Sass.'
-        },
-        {
-          id: 6,
-          text: 'Our team built and launched a completely new version of screen.yahoo.com on a NodeJS stack in 6 weeks.'
-        },
-        {
-          id: 7,
-          text: 'I led the effort to create a mobile version of the site, contributed the social media sharing module, and led the sitemap implementation. I advocated for the enhancement of sitemaps with rich metadata using the Schema.org and Yahoo Media RSS taxonomies and initiated discussions between Yahoo, Google, and Microsoft on this industry standard.'
-        },
-        {
-          id: 8,
-          text: 'Tech stack: Express, Git, Github, Mustache, NodeJS, PJAX, Sass, YUI.'
+          text: 'Led the screen.yahoo.com sitemap implementation, advocating for enhancement with rich metadata using the Schema.org and Yahoo Media RSS taxonomies.'
         }
       ],
       company: 'Yahoo',
@@ -252,7 +240,7 @@ export const resume: Resume = {
       'Shell',
       'Storybook',
       'SQL',
-      'TDD',
+      'Test-Driven Development (TDD)',
       'TypeScript',
     ],
     title: 'Senior Frontend Software Engineer'
