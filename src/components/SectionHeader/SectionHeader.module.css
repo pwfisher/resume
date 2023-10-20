@@ -1,15 +1,11 @@
 .body {
   border-bottom: 1px solid transparent;
   border-color: rgba(var(--font-rgb), 0.7);
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 8px;
-  opacity: 0.9;
   padding-bottom: 6px;
   text-transform: uppercase;
-
-  @media screen and (prefers-color-scheme: dark) {
-    opacity: 0.8;
-  }
 }
 
 .body::first-letter {

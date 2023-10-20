@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   max-width: var(--page-max-width);
-  padding: 16px;
+  padding-bottom: 16px;
   text-align: center;
   width: 100%;
   z-index: 100;
@@ -30,36 +30,31 @@
 .title {
   font-size: 18px;
   letter-spacing: 1px;
-  line-height: 1.5;
   text-transform: uppercase;
-  opacity: 0.8;
   width: fit-content;
 }
 
 .links {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .link {
-  font-family: var(--font-mono);
-  font-size: 14px;
-  line-height: 22px;
-  opacity: 0.7;
+  border-bottom: 1px solid rgba(var(--font-rgb), 0.5);
+  line-height: 1.6;
   text-align: center;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 701px) {
   .body {
     border-bottom: 1px solid rgba(var(--font-rgb), 0.3);
+    padding-bottom: 24px;
   }
 }
 
 @media print {
   .body {
-    padding: 0;
-  }
-
-  .links {
-    margin-top: 8px;
+    border-bottom: 1px solid rgba(var(--font-rgb), 0.3);
+    padding-bottom: 24px;
   }
 }

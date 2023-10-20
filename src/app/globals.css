@@ -1,8 +1,5 @@
 :root {
   --font-rgb: 47, 48, 49;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
   --page-rgb: 256, 256, 256;
   --page-max-width: 900px;
 
@@ -33,15 +30,12 @@ body {
 body {
   background-color: rgb(var(--page-rgb));
   color: rgb(var(--font-rgb));
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 a {
   color: inherit;
-}
-
-code {
-  font-family: var(--font-mono);
-  font-weight: 700;
 }
 
 li {

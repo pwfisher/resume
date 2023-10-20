@@ -3,19 +3,24 @@
 }
 
 .name {
+  color: black;
   font-size: 20px;
-  margin-bottom: 4px;
+  font-weight: 600;
+  margin-bottom: 2px;
+
+  @media screen and (prefers-color-scheme: dark) {
+    color: white;
+  }
 }
 
 .degree {
-  font-weight: 500;
-  margin-bottom: 6px;
-  opacity: 0.8;
+  font-size: 18px;
+  margin-bottom: 4px;
 }
 
 .dates {
   font-size: 14px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 701px) {
@@ -24,8 +29,12 @@
     justify-content: space-between;
   }
 
+  .left {
+    padding: 0 6px 0 0;
+  }
+
   .right {
-    padding-top: 4px;
+    padding: 6px 0 0 6px;
     text-align: right;
   }
 }
@@ -37,8 +46,12 @@
     page-break-inside: avoid;
   }
 
+  .left {
+    padding: 0 6px 0 0;
+  }
+
   .right {
-    padding-top: 4px;
+    padding: 6px 0 0 6px;
     text-align: right;
   }
 }

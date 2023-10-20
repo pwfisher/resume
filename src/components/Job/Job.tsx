@@ -31,7 +31,7 @@ export const Job: FC<{ job: IJob }> = ({ job }) => {
       <Bullets {...{ bullets }} uniqueId={`Job:${id}`} />
       {tools ? (
         <ul className={styles.tools}>
-          <li className={styles.tool} key='Tools'><b>Tools:</b></li>
+          <li className={styles.tool} key='Tools'><b>Tools</b></li>
           {tools.map(x => <li className={styles.tool} key={x}>{x}</li>)}
         </ul>
       ) : null}

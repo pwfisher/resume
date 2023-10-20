@@ -51,7 +51,7 @@ export const resume: Resume = {
       bullets: [
         {
           id: 0,
-          text: 'Built list and carousel modules shared across all Yahoo media—powering home pages and more for News, Sports, Finance, etc. in dozens of languages, for hundreds of sites.'
+          text: 'Built list and carousel modules shared across all Yahoo media — powering home pages and more for News, Sports, Finance, etc. in dozens of languages, for hundreds of sites.'
         },
         {
           id: 1,
@@ -137,6 +137,7 @@ export const resume: Resume = {
         'Jenkins',
         'npm',
         'Rails (erb)',
+        'Redux',
       ]
     },
     {
@@ -236,7 +237,7 @@ export const resume: Resume = {
       'Regular Expressions (regex)',
       'Responsive design',
       'Single Page Applications (SPA)',
-      'SCSS/SASS',
+      'Sass',
       'Shell',
       'Storybook',
       'SQL',

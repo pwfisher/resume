@@ -6,10 +6,8 @@
 
 .body h4 {
   display: inline;
-  font-size: 13px;
-  font-weight: 700;
-  margin-top: 6px;
-  opacity: 0.6;
+  font-weight: 600;
+  opacity: 0.8;
 }
 
 .skills {
@@ -18,9 +16,8 @@
 
 .skill {
   display: inline-block;
-  font-size: 14px;
-  margin: 6px 0 0 6px;
-  opacity: 0.7;
+  margin: 0px 0 0 6px;
+  opacity: 0.8;
   white-space: nowrap;
 }
 
@@ -42,12 +39,12 @@
   }
 
   .skills {
-    line-height: 1.4;
+    line-height: 18px;
   }
 
   .skill {
     display: block;
-    margin: 6px 0 0 12px;
+    margin: 4px 0 0 12px;
     text-indent: -12px;
     white-space: normal;
   }
@@ -70,7 +67,7 @@
 
   .skill {
     display: block;
-    margin: 6px 0 0 12px;
+    margin: 4px 0 0 12px;
     text-indent: -12px;
     white-space: normal;
   }
