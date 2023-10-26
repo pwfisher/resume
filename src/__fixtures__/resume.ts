@@ -138,6 +138,7 @@ export const resume: Resume = {
         'npm',
         'Rails (erb)',
         'Redux',
+        'Sketch',
       ]
     },
     {
@@ -186,6 +187,7 @@ export const resume: Resume = {
         'Next.js',
         'node',
         'React',
+        'Redux',
         'Regex',
         'Shell',
         'Shopify',
@@ -227,6 +229,7 @@ export const resume: Resume = {
       'Accessibilty (a11y)',
       'CSS',
       'Contentful',
+      'Docker',
       'Git/GitHub',
       'GraphQL',
       'HTML',
@@ -244,7 +247,7 @@ export const resume: Resume = {
       'Test-Driven Development (TDD)',
       'TypeScript',
     ],
-    title: 'Senior Frontend Software Engineer'
+    title: 'Frontend Software Engineer'
   },
   schools: [
     {

@@ -17,7 +17,7 @@ This repository is both an example of my work and an interactive resume.
 - CSS variables for code clarity and robustness.
 - Responsive widget: `SeeMore` updates on both resize and orientation change.
 - Contact info: obfuscated from search engines.
-- Print layout.
+- Print layout. Optimized for Chrome.
 
 # Development
 
