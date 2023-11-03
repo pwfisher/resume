@@ -10,7 +10,7 @@ export const resume: Resume = {
         },
         {
           id: 1,
-          text: 'Designed and implemented numerous essential site features such as the deloyment system.'
+          text: 'Designed and implemented numerous essential site features such as the deployment system.'
         },
         {
           id: 2,
@@ -25,7 +25,7 @@ export const resume: Resume = {
           text: 'Provided tech support to coworkers.'
         }
       ],
-      company: 'All Access Music Group, Inc.',
+      company: 'All Access Music Group',
       dateEnd: 'Apr 2011',
       dateStart: 'Nov 2007',
       duration: '3 yrs 6 mos',
@@ -51,15 +51,15 @@ export const resume: Resume = {
       bullets: [
         {
           id: 0,
-          text: 'Built list and carousel modules shared across all Yahoo media — powering home pages and more for News, Sports, Finance, etc. in dozens of languages, for hundreds of sites.'
+          text: 'Built list and carousel modules for hundreds of sites—e.g. News, Sports, Finance.—in dozens of languages.'
         },
         {
           id: 1,
-          text: 'Made carousel batching logic with async request queue which is lazy until interaction, then prefetches and intelligently handles rapid-fire requests in LIFO order.'
+          text: 'Made carousel request queue which is lazy, prefetches, and handles rapid requests in LIFO order.'
         },
         {
           id: 2,
-          text: 'Independently conceived and implemented method by which entire page is scrollable but each column of content moves independently.'
+          text: 'Invented scrollable page where each column of content moves independently.'
         },
         {
           id: 3,
