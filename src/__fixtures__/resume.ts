@@ -51,7 +51,7 @@ export const resume: Resume = {
       bullets: [
         {
           id: 0,
-          text: 'Built list and carousel modules for hundreds of sites—e.g. News, Sports, Finance.—in dozens of languages.'
+          text: 'Built list and carousel modules for hundreds of sites—e.g. News, Sports, Finance—in dozens of languages.'
         },
         {
           id: 1,
