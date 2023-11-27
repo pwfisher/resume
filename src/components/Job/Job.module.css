@@ -32,35 +32,9 @@
   font-size: 10px;
   line-height: 1.3;
   margin: 12px 0 0 33px;
+  opacity: 0.8;
   text-indent: -33px;
 }
-
-.tool {
-  display: inline-block;
-  margin-left: 2px;
-  opacity: 0.8;
-  text-indent: 0;
-  white-space: nowrap;
-}
-
-.tool::after {
-  content: '·';
-  margin-left: 2px;
-  opacity: 0.6;
-}
-
-.tool:first-child {
-  margin-right: 4px;
-}
-
-.tool:first-child::after {
-  content: none;
-}
-
-.tool:last-child::after {
-  content: none;
-}
-
 
 @media screen and (min-width: 701px) {
   .header {

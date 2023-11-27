@@ -30,10 +30,7 @@ export const Job: FC<{ job: IJob }> = ({ job }) => {
       </header>
       <Bullets {...{ bullets }} uniqueId={`Job:${id}`} />
       {tools ? (
-        <ul className={styles.tools}>
-          <li className={styles.tool} key='Tools'><b>Tools</b></li>
-          {tools.map(x => <li className={styles.tool} key={x}>{x}</li>)}
-        </ul>
+        <div className={styles.tools}><b>Tools:</b> {tools.join(', ')}</div>
       ) : null}
     </div>
   )
